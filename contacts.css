@@ -1,0 +1,262 @@
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    color: #2F2C2C;
+}
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+h1,h2,h3,h4,h5,h6{
+    margin: 0;
+}
+
+p{
+    margin: 0;
+}
+
+a{
+    text-decoration: none;
+}
+
+/* Container
+======================*/
+.container{
+    width:100%;
+    max-width: 1124px;
+    margin: 0 auto;
+}
+
+/* Header
+======================*/
+.header{
+    width: 100%;
+    background-color: #C1CCB2;
+}
+
+.header__inner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 31px 0;
+}
+
+.header__logo__img{
+    width: 80px;
+}
+
+/* Nav
+======================*/
+
+.nav{
+    display: flex;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.nav__link{
+    margin-left: 76px;
+    color: #fff;
+    text-decoration: none;
+    opacity: 1;
+
+    transition: opacity .2s linear; /* плавное наведение*/
+}
+
+.nav__link:first-child{
+    margin-left: 0; /* у первой ссылки отступ слева 0*/
+}
+
+.nav__link:hover { /* при наведении*/
+    opacity: 0.75;
+}
+
+.nav__img{
+    width: 17px;
+    height: auto;
+}
+
+/* Intro
+======================*/
+
+.intro{
+    background: url("img/contacts/Group 32.png") center no-repeat;
+    height: 798px;
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.intro__img{
+    width: 320px;
+    margin: 129px 0 0 560px;
+}
+
+.information{
+    background: url("img/contacts/back1.png") center no-repeat;
+    height: 680px;
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.information__title{
+    font-size: 35px;
+    color: #2F2C2C;
+    margin-top: 78px;
+    margin-left: 340px;
+}
+
+.information__text{
+    display: flex;
+}
+
+/* Contact
+======================*/
+
+.container2{
+    width:100%;
+    max-width: 920px;
+    margin: 0 auto;
+}
+
+.contact{
+    display: flex;
+    margin: 100px 0;
+
+}
+
+.contact__item{
+    max-width: 435px;
+    width: 33.333%;
+    text-align: center;
+}
+
+.contact__img{
+    width: 70px;
+}
+
+.contact__item2{
+    max-width: 435px;
+    width: 33.333%;
+    text-align: center;
+}
+
+.contact__img2{
+    width: 70px;
+}
+
+.contact__item3{
+    max-width: 435px;
+    width: 33.333%;
+    text-align: center;
+}
+
+.contact__img3{
+    width: 70px;
+}
+
+.information__text2{
+    margin-left: 400px;
+}
+
+.information__title2{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+/* Inst
+======================*/
+
+.inst{
+    background: url("img/contacts/Group 47 1.png") center no-repeat;
+    height: 515px;
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.inst__img{
+    width: 70px;
+}
+
+.inst__text{
+    font-size: 60px;
+    color: #2f2c2c;
+    margin-top: 54px;
+}
+
+.inst__name{
+    font-size: 34px;
+    color: #2f2c2c;
+    margin-top: 50px;
+}
+
+/* Inst
+======================*/
+
+.gallery{
+    max-width: 1440px;
+    width: 100%;
+    height: 540px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* Footer
+======================*/
+
+.footer{
+    background: url("img/main/footer1.png") top no-repeat, url("img/main/footer2.png") left no-repeat, url("img/main/footer3.png") right no-repeat;
+    max-height: 372px;
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer__heading{
+    color: #e8e6d7;
+    font-size: 30px;
+    display: flex;
+    max-width: 1311px;
+}
+
+.footer__text1{
+    margin-top: 102px;
+    margin-left: 68px;
+}
+
+.footer__text2{
+    margin-top: 102px;
+    margin-left: 950px;
+    color: #97a87d;
+}
+
+.footer__a{
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1311px;
+}
+
+.footer__text3{
+    margin-left: 68px;
+    font-size: 24px;
+    color: #e8e6d7;
+}
+
+.footer__inst{
+    width: 50px;
+    margin-left: 1325px;
+    margin-bottom: 100px;
+}
+
+
+

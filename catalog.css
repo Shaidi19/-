@@ -1,0 +1,395 @@
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    color: #2F2C2C;
+}
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+h1,h2,h3,h4,h5,h6{
+    margin: 0;
+}
+
+p{
+    margin: 0;
+}
+
+a{
+    text-decoration: none;
+}
+
+/* Container
+======================*/
+.container{
+    width:100%;
+    max-width: 1124px;
+    margin: 0 auto;
+}
+
+/* Header
+======================*/
+.header{
+    width: 100%;
+}
+
+.header__inner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 31px 0;
+}
+
+/* Nav
+======================*/
+
+.nav{
+    display: flex;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.nav__link{
+    margin-left: 76px;
+    color: #849966;
+    text-decoration: none;
+    opacity: 0.75;
+
+    transition: opacity .2s linear; /* плавное наведение*/
+}
+
+.nav__link:first-child{
+    margin-left: 0; /* у первой ссылки отступ слева 0*/
+}
+
+.nav__link:hover { /* при наведении*/
+    opacity: 1;
+}
+
+.nav__img{
+    width: 17px;
+    height: auto;
+}
+
+/*Intro
+======================*/
+
+.intro {
+    height: 800px;
+    width:100%;
+    max-width: 1440px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.bra{
+    position: relative;
+    width: 33.333%;
+    transition: opacity .7s linear; /* плавное наведение*/
+}
+
+.bra__img:hover{
+    opacity: 0.8;
+}
+
+.bra__text{
+    position: absolute;
+    top: 244px;
+    left: 100px;
+    color: #FFFFFF;
+}
+
+.bra__text1{
+    font-size: 50px;
+}
+
+.decor{
+    position: relative;
+    width: 33.333%;
+    transition: opacity .7s linear; /* плавное наведение*/
+}
+
+.decor__img:hover{
+    opacity: 0.8;
+}
+
+.decor__text{
+    position: absolute;
+    top: 244px;
+    left: 100px;
+    color: #FFFFFF;
+}
+
+.decor__text1{
+    font-size: 50px;
+}
+
+.pants{
+    position: relative;
+    width: 33.333%;
+    transition: opacity .7s linear; /* плавное наведение*/
+}
+
+.pants__img:hover{
+    opacity: 0.8;
+}
+
+.pants__text{
+    position: absolute;
+    top: 244px;
+    left: 100px;
+    color: #FFFFFF;
+}
+
+.pants__text1{
+    font-size: 50px;
+}
+
+/*Catalog
+===================*/
+
+.section-catalog{
+    padding: 110px 0;
+}
+
+.section__header{
+    margin-bottom: 90px;
+}
+
+.section__title{
+    font-size: 48px;
+    text-align: center;
+    margin: 0 auto 40px;
+    font-weight: 700;
+}
+
+
+.catalog{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -35px;
+}
+
+.catalog__item{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 90px;
+}
+
+.product{
+    height: auto;
+    width: 33.333%;
+    margin-bottom: 90px;
+    position: relative;
+    padding: 0 35px;
+    max-width: 100%;
+}
+
+.product::before{
+    content: '';
+    background: #f7f7f7;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 3px;
+    height: 100%;
+    transform: translateX(-50%);
+}
+
+.product:nth-of-type(3n+1)::before{ /*каждый 4 элемент, включая первый*/
+    content: none;
+}
+
+
+
+.product__content{
+    margin-bottom: 20px;
+}
+
+.product__img{
+    display: block;
+    margin: 0 auto 15px;
+}
+
+.product__title{
+    margin: 0 0 10px;
+    font-weight: 700;
+    font-size: 22px;
+}
+
+.product__description{
+    color: #9f9f9f;
+    font-size: 16px;
+}
+
+.product__price{
+    font-size: 22px;
+    font-weight: 700;
+    margin-right: 30px;
+}
+
+.product__button{
+    display: flex;
+    align-items: center;
+}
+
+.product__btn{
+   background: #849966;
+    color: #fff;
+    display: inline-block;
+    padding: 15px 5px;
+    width: 150px;
+    max-width: 100%;
+    border-radius: 28px;
+    font-weight: 700;
+    font-size: 18px;
+    border: 0;
+    cursor: pointer;
+    text-align: center;
+    letter-spacing: .02em;
+    transition: background .2s, color .2s;
+}
+
+.product__btn:hover{
+    background: #fff;
+    color: #849966;
+}
+
+/* Inst
+======================*/
+
+.inst{
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+.inst__img{
+    width: 70px;
+}
+
+.inst__text{
+    font-size: 60px;
+    color: #2f2c2c;
+    margin-top: 54px;
+}
+
+.inst__name{
+    font-size: 34px;
+    color: #2f2c2c;
+    margin-top: 50px;
+}
+
+/* Inst
+======================*/
+
+.gallery{
+    max-width: 1440px;
+    width: 100%;
+    height: 540px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* Footer
+======================*/
+
+.footer{
+    background: url("img/main/footer1.png") top no-repeat, url("img/main/footer2.png") left no-repeat, url("img/main/footer3.png") right no-repeat;
+    max-height: 372px;
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer__heading{
+    color: #e8e6d7;
+    font-size: 30px;
+    display: flex;
+    max-width: 1311px;
+}
+
+.footer__text1{
+    margin-top: 102px;
+    margin-left: 68px;
+}
+
+.footer__text2{
+    margin-top: 102px;
+    margin-left: 950px;
+    color: #97a87d;
+}
+
+.footer__a{
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1311px;
+}
+
+.footer__text3{
+    margin-left: 68px;
+    font-size: 24px;
+    color: #e8e6d7;
+}
+
+.footer__text4{
+    margin-left: 150px;
+    font-size: 24px;
+    color: #e8e6d7;
+}
+
+.footer__inst{
+    width: 50px;
+    margin-left: 1325px;
+    margin-bottom: 100px;
+}
+
+.hidden {
+    display: none;
+}
+
+.modal-body {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50%;
+    /* height: 30rem; */
+    z-index: 1000;
+    overflow-x: hidden;
+    background: white;
+    border-radius: 10px;
+}
+
+.modal-wrap::before {
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: block;
+    content: "";
+    background: rgba(212, 149, 149, 0.5);
+    width: 100rem;
+    height: 100rem;
+    z-index: 999;
+}
+
+.close-modal-btn,
+.close-modal-btn:hover  {
+    text-decoration: none;
+    color: gray;
+    position: absolute;
+    top: 5;
+    right: 20px;
+    cursor: pointer;
+    font-size: 10px;
+}

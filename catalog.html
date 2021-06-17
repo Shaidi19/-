@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" >
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" >
+    <link rel="stylesheet" href="css/catalog.css">
+        <title>Каталог</title>
+</head>
+    <body>
+        <div class="modal-wrap hidden">
+            <div class="modal-body">
+                <a href="#" class="close-modal-btn" onclick="closeModal(event)">Закрыть</a>
+                <p> Введите контактные данные, и мы свяжемся с вами для подтверждения заказа</p>
+                <div class="form-group">
+                    <label for="name"> Имя:</label>
+                    <input type="text" class="form-control" id="name" name="name" required maxlength="50">
+                </div>
+                <div class="form-group">
+                    <label for="email"> Email или номер телефона:</label>
+                    <input type="email" class="form-control" id="email" name="email" required maxlength="50">
+                </div>
+                <button onclick="makeOrder()" class="btn btn-lg btn-success btn-block" id="btnContactUs">Заказать</button>
+            <div id="success_message" style="width:100%; height:100%; display:none; "> <h3>Sent your message successfully!</h3> </div>
+        </div>
+        </div>
+    <header class="header">
+        <div class="container">
+            <div class="header__inner">
+                <div class="header__logo">
+                    <img src="css/img/main/logo.jpg" alt="">
+                </div>
+                <nav class="nav">
+                    <a class="nav__link" href="index.html">Главная</a>
+                    <a class="nav__link" href="catalog.html">Каталог</a>
+                    <a class="nav__link" href="reviews.html">Отзывы</a>
+                    <a class="nav__link" href="measures.html">Мерки</a>
+                    <a class="nav__link" href="contacts.html">Контакты</a>
+                    <a class="nav__link" href="basket.html"><img class="nav__img" src="css/img/basket/shop.png"></a>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <div class="intro">
+        <div class="bra">
+            <a href="#bra"><img class="bra__img" src="css/img/catalog/1.png" alt=""></a>
+            <div class="bra__text">
+                <h1 class="bra__text1">/01<br>Лифы</h1>
+            </div>
+        </div>
+        <div class="decor">
+            <a href="#decor"><img class="decor__img" src="css/img/catalog/2.png" alt=""></a>
+            <div class="decor__text">
+                <h1 class="decor__text1">/02<br>Аксессуары</h1>
+            </div>
+        </div>
+        <div class="pants">
+            <a href="#pants"><img class="pants__img" src="css/img/catalog/3.png" alt=""></a>
+            <div class="pants__text">
+                <h1 class="pants__text1">/03<br>Трусы</h1>
+            </div>
+        </div>
+    </div>
+    <section class="section-catalog">
+        <div class="container">
+            <header class="section__header">
+                <a name="bra"></a>
+                <h2 class="section__title">Лифы</h2>
+            </header>
+            <div class="catalog">
+                <div class="catalog__item">
+                    <!-- Lily -->
+                    <div class="product">
+                        <img class="product__img" src="css/img/catalog/lily.png">
+                        <div class="product__content">
+                            <h3 class="product__title">Lily</h3>
+                            <p class="product__description">Лиф на косточке. Можно выполнить из сетка/кружево/секта+кружево</p>
+                        </div>
+                        <footer class="product__footer">
+                            <div class="product__button">
+                                <div class="product__price">
+                                    <span class="product__price-value">1790</span>
+                                    <span class="product__currency">&#8381;</span>
+                                </div>
+                                <button id="order1" class="btn product__btn" type="button">Заказать</button>
+                            </div>
+                        </footer>
+                    </div>
+                    <!-- Aster -->
+                    <div class="product">
+                        <img class="product__img" src="css/img/catalog/aster.png">
+                        <div class="product__content">
+                            <h3 class="product__title">Aster</h3>
+                            <p class="product__description">Бескаркасный лиф. Можно выполнить из сетки</p>
+                        </div>
+                        <footer class="product__footer">
+                            <div class="product__button">
+                                <div class="product__price">
+                                    <span class="product__price-value">1190</span>
+                                    <span class="product__currency">&#8381;</span>
+                                </div>
+                                <button id="order2" class="btn product__btn" type="button">Заказать</button>
+                            </div>
+                        </footer>
+                    </div>
+                    <!-- Peon -->
+                    <div class="product">
+                        <img class="product__img" src="css/img/catalog/peon.png">
+                        <div class="product__content">
+                            <h3 class="product__title">Peon</h3>
+                            <p class="product__description">Бескаркасный лиф. Можно выполнить из кружева</p>
+                        </div>
+                        <footer class="product__footer">
+                            <div class="product__button">
+                                <div class="product__price">
+                                    <span class="product__price-value">1390</span>
+                                    <span class="product__currency">&#8381;</span>
+                                </div>
+                                <button id="order3"  class="btn product__btn" type="button">Заказать</button>
+                            </div>
+                        </footer>
+                    </div>
+                    <!-- Tulip -->
+                    <div class="product">
+                        <img class="product__img" src="css/img/catalog/tulip.png">
+                        <div class="product__content">
+                            <h3 class="product__title">Tulip</h3>
+                            <p class="product__description">Бескаркасный лиф. Можно выполнить из сетки</p>
+                        </div>
+                        <footer class="product__footer">
+                            <div class="product__button">
+                                <div class="product__price">
+                                    <span class="product__price-value">1190</span>
+                                    <span class="product__currency">&#8381;</span>
+                                </div>
+                                <button id="order4"  class="btn product__btn" type="button">Заказать</button>
+                            </div>
+                        </footer>
+                    </div>
+                    <!-- Sunflower -->
+                    <div class="product">
+                        <img class="product__img" src="css/img/catalog/sunflower.png">
+                        <div class="product__content">
+                            <h3 class="product__title">Sunflower</h3>
+                            <p class="product__description">Бескаркасный лиф. Можно выполнить из кружева</p>
+                        </div>
+                        <footer class="product__footer">
+                            <div class="product__button">
+                                <div class="product__price">
+                                    <span class="product__price-value">1390</span>
+                                    <span class="product__currency">&#8381;</span>
+                                </div>
+                                <button id="order5"  class="btn product__btn" type="button">Заказать</button>
+                            </div>
+                        </footer>
+                    </div>
+                    <!-- Rose -->
+                    <div class="product">
+                        <img class="product__img" src="css/img/catalog/rose.png">
+                        <div class="product__content">
+                            <h3 class="product__title">Rose</h3>
+                            <p class="product__description">Бескаркасный лиф. Можно выполнить из сетки</p>
+                        </div>
+                        <footer class="product__footer">
+                            <div class="product__button">
+                                <div class="product__price">
+                                    <span class="product__price-value">1190</span>
+                                    <span class="product__currency">&#8381;</span>
+                                </div>
+                                <button id="order6" class="btn product__btn" type="button">Заказать</button>
+                            </div>
+                        </footer>
+                    </div>
+                </div>
+            </div>
+            <header class="section__header">
+                <a name="decor"></a>
+                <h2 class="section__title">Акссессуары</h2>
+            </header>
+            <div class="catalog">
+                <div class="catalog__item">
+                    <!-- Liana -->
+                    <div class="product">
+                        <img class="product__img" src="css/img/catalog/liana.png">
+                        <div class="product__content">
+                            <h3 class="product__title">Liana</h3>
+                            <p class="product__description">Стрэпы на ноги. Белый/черный/бежевый цвет</p>
+                        </div>
+                        <footer class="product__footer">
+                            <div class="product__button">
+                                <div class="product__price">
+                                    <span class="product__price-value">890</span>
+                                    <span class="product__currency">&#8381;</span>
+                                </div>
+                                <button id="order7" class="btn product__btn" type="button">Заказать</button>
+                            </div>
+                        </footer>
+                    </div>
+                    <!-- Jasmine -->
+                    <div class="product">
+                        <img class="product__img" src="css/img/catalog/jasmine.png">
+                        <div class="product__content">
+                            <h3 class="product__title">Jusmine</h3>
+                            <p class="product__description">Пояс для чулок. Может быть выполнен из сетки/кружева</p>
+                        </div>
+                        <footer class="product__footer">
+                            <div class="product__button">
+                                <div class="product__price">
+                                    <span class="product__price-value">890</span>
+                                    <span class="product__currency">&#8381;</span>
+                                </div>
+                                <button id="order9"  class="btn product__btn" type="button">Заказать</button>
+                            </div>
+                        </footer>
+                    </div>
+                    <!-- Poppy -->
+                    <div class="product">
+                        <img class="product__img" src="css/img/catalog/poppy.png">
+                        <div class="product__content">
+                            <h3 class="product__title">Poppy</h3>
+                            <p class="product__description">Стрэпы на поясе. Может быть выполнено из сетки/кружева</p>
+                        </div>
+                        <footer class="product__footer">
+                            <div class="product__button">
+                                <div class="product__price">
+                                    <span class="product__price-value">990</span>
+                                    <span class="product__currency">&#8381;</span>
+                                </div>
+                                <button id="order10"  class="btn product__btn" type="button">Заказать</button>
+                            </div>
+                        </footer>
+                    </div>
+                </div>
+            </div>
+            <header class="section__header">
+                <a name="pants" target="_blank"></a>
+                <h2 class="section__title">Трусы</h2>
+            </header>
+            <div class="catalog">
+                <div class="catalog__item">
+                    <!-- Daisy -->
+                    <div class="product">
+                        <img class="product__img" src="css/img/catalog/daisy.png">
+                        <div class="product__content">
+                            <h3 class="product__title">Daisy</h3>
+                            <p class="product__description">Сетка</p>
+                        </div>
+                        <footer class="product__footer">
+                            <div class="product__button">
+                                <div class="product__price">
+                                    <span class="product__price-value">890</span>
+                                    <span class="product__currency">&#8381;</span>
+                                </div>
+                                <button id="order11"  class="btn product__btn" type="button">Заказать</button>
+                            </div>
+                        </footer>
+                    </div>
+                    <!-- Lavanda -->
+                    <div class="product">
+                        <img class="product__img" src="css/img/catalog/lavanda.png">
+                        <div class="product__content">
+                            <h3 class="product__title">Lavanda</h3>
+                            <p class="product__description">Сетка+кружево</p>
+                        </div>
+                        <footer class="product__footer">
+                            <div class="product__button">
+                                <div class="product__price">
+                                    <span class="product__price-value">890</span>
+                                    <span class="product__currency">&#8381;</span>
+                                </div>
+                                <button id="order12"  class="btn product__btn" type="button">Заказать</button>
+                            </div>
+                        </footer>
+                    </div>
+                    <!-- Violet -->
+                    <div class="product">
+                        <img class="product__img" src="css/img/catalog/violet.png">
+                        <div class="product__content">
+                            <h3 class="product__title">Violet</h3>
+                            <p class="product__description">Сетка/кружево</p>
+                        </div>
+                        <footer class="product__footer">
+                            <div class="product__button">
+                                <div class="product__price">
+                                    <span class="product__price-value">890</span>
+                                    <span class="product__currency">&#8381;</span>
+                                </div>
+                                <button id="order14"  class="btn product__btn" type="button">Заказать</button>
+                            </div>
+                        </footer>
+                    </div>
+                    <!-- Phlox -->
+                    <div class="product">
+                        <img class="product__img" src="css/img/catalog/phlox.png">
+                        <div class="product__content">
+                            <h3 class="product__title">Phlox</h3>
+                            <p class="product__description">Сетка+кружево</p>
+                        </div>
+                        <footer class="product__footer">
+                            <div class="product__button">
+                                <div class="product__price">
+                                    <span class="product__price-value">890</span>
+                                    <span class="product__currency">&#8381;</span>
+                                </div>
+                                <button id="order15" class="btn product__btn" type="button">Заказать</button>
+                            </div>
+                        </footer>
+                    </div>
+                    <!-- Canna -->
+                    <div class="product">
+                        <img class="product__img" src="css/img/catalog/canna.png">
+                        <div class="product__content">
+                            <h3 class="product__title">Canna</h3>
+                            <p class="product__description">Сетка</p>
+                        </div>
+                        <footer class="product__footer">
+                            <div class="product__button">
+                                <div class="product__price">
+                                    <span class="product__price-value">890</span>
+                                    <span class="product__currency">&#8381;</span>
+                                </div>
+                                <button id="order16"  class="btn product__btn" type="button">Заказать</button>
+                            </div>
+                        </footer>
+                    </div>
+                    <!-- Crocus -->
+                    <div class="product">
+                        <img class="product__img" src="css/img/catalog/crocus.png">
+                        <div class="product__content">
+                            <h3 class="product__title">Crocus</h3>
+                            <p class="product__description">Сетка/кружево</p>
+                        </div>
+                        <footer class="product__footer">
+                            <div class="product__button">
+                                <div class="product__price">
+                                    <span class="product__price-value">890</span>
+                                    <span class="product__currency">&#8381;</span>
+                                </div>
+                                <button id="order17" class="btn product__btn" type="button">Заказать</button>
+                            </div>
+                        </footer>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="inst">
+        <a href="https://www.instagram.com/astel_underwear/" target="_blank"><img class="inst__img" src="css/img/main/inst.png"></a>
+        <h1 class="inst__text">Подпишись на нас в Instagram</h1>
+        <p class="inst__name">@astel_underwear</p>
+    </div>
+    <div class="gallery">
+        <img class="gallery__img1" src="css/img/main/img1.png" alt="">
+        <img class="gallery__img2" src="css/img/main/img2.png" alt="">
+        <img class="gallery__img3" src="css/img/main/img3.png" alt="">
+        <img class="gallery__img4" src="css/img/main/img4.png" alt="">
+    </div>
+    <div class="footer">
+        <div class="footer__heading">
+            <p class="footer__text1">Информация</p>
+            <p class="footer__text2">Контакты</p>
+        </div>
+        <div class="footer__a">
+            <a href="catalog.html"><p class="footer__text3">Каталог</p></a>
+            <a href="https://www.instagram.com/astel_underwear/"><img class="footer__inst" src="css/img/main/inst_logo.png" alt=""></a>
+        </div>
+    </div>
+    <script>
+        function openModal(event) {
+            let e = event || window.event;
+            let target = e.target || e.srcElement;
+            window.orderId = target.id;
+            let modal = document.querySelector('.modal-wrap');
+            modal.classList.remove('hidden');
+        }
+
+        function closeModal(event) {
+            if(event)
+                event.preventDefault();
+            let modal = document.querySelector('.modal-wrap');
+            modal.classList.add('hidden');
+        }
+
+        async function makeOrder() {
+            const rawResponse = await fetch('/makeorder', {
+            method: 'POST',
+            headers: {
+                'Accept': 'application/json',
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({contacts: document.querySelector('#email').value, name: document.querySelector('#name').value, orderId: window.orderId})
+            });
+            document.querySelector('#email').value = '';
+            document.querySelector('#name').value = '';
+            // const content = await rawResponse.json();
+            // console.log(content);
+            closeModal();
+        };
+
+        this.buttons = document.querySelectorAll('.btn.product__btn');
+        this.buttonItems = [].slice.call(this.buttons);
+
+        this.buttonItems.forEach(function (item, idx) {
+            item.addEventListener('click', openModal);
+        });
+
+    </script>
+    </body>
+</html>
